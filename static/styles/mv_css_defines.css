@@ -1,0 +1,23 @@
+/*!
+ * Site implementation specific CSS - MSV/webcmg.com 05/2020
+ */
+
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+ 
+/* 
+anchors are inline so you need ot make them block to go full width
+*/ 
+ 
+.carousel{
+  width:100%;
+  max-height: 500px !important;
+}
+ 
+.h1-info-box{
+  background:rgba(204, 204, 204, 0.5); 
+  color: black;
+}
+ 

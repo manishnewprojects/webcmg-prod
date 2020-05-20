@@ -1,0 +1,85 @@
+<!-- Copyright (C) 2020, WebCMG, Inc.   -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+
+  <!-- Basic Page Needs -->
+
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="author" content="{{author}}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/ico" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+ <!-- Google specific metatags -->
+<meta name="robots" content="noindex,nofollow">
+<meta name="google" content="nositelinkssearchbox">
+
+
+  <!-- Meta TAGS -->
+
+  <meta property="og:title" content="WebCMG">
+  <meta property="og:site_name" content="webcmg.com">
+  <meta property="og:url" content="https://webcmg.com">
+  <meta property="og:description" content="Website creation, management and growth services for small businesses">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://webcmg.com/static/images/logo/webcmg_logo.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Hotjar Tracking Code for https://webcmg.com -->
+
+  <!-- Sharethis widget -->
+
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
+
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/jquery-ui.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css') }}">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Local JS --> 
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/carousel.css') }}">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/mv_css_defines.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,615;0,700;0,800;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+ <!-- All functional HTML -->
+
+
+    {% include "navbar.html" %}
+
+    {% block content %} {% endblock %}
+     
+    {% include "footer.html" %}
+
+    {% include "ender.html" %}
+
+    
+</body>
+ 
+</html>
